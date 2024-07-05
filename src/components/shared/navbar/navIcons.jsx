@@ -1,3 +1,8 @@
+import search from "../../../assets/react.svg";
+
+import profile from "../../../assets/react.svg";
+import fav from "../../../assets/react.svg";
+import cart from "../../../assets/react.svg";
 const NavIcons = ()=>{
 
   return(
@@ -6,3 +11,5 @@ const NavIcons = ()=>{
     </div>
   )
 }
+
+export default NavIcons;
