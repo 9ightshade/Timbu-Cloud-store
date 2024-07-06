@@ -3,17 +3,13 @@ const Hero = ()=>{
 
   return(
     <div>
-        <div style={{border:"2px red solid", position:"relative"}} >
+      <div>
       <img src={heroImage} style={{ width: "100%" }} alt="hero image" />
-      {/* <h1 style={{position:"absolute", left:"50%", bottom:"50%" }} >
-        Shop
-      </h1> */}
       </div>
       
-      <h2>
+      <h2 style={{margin:"1.3em 0"}} >
         All Products
-</h2>
-
+      </h2>
   </div>
   )
 };

@@ -1,12 +1,14 @@
 import search from "../../../assets/images/search.png";
-
 import profile from "../../../assets/images/user.png";
 import fav from "../../../assets/images/nav-fav.png";
 import cart from "../../../assets/images/Cart.png";
+import "./navicons.css";
+
+
 const NavIcons = ()=>{
 
   return(
-    <div  style={{display:"flex", gap:"1em", alignItems:"center"}} >
+    <div className="navicons " >
       <div>
        <img src={search} alt="search icon" />
       </div>
@@ -18,8 +20,7 @@ const NavIcons = ()=>{
       </div>
       <div>
         <img src={cart} alt="cart icon" />
-</div>
-      
+      </div>
     </div>
   )
 }

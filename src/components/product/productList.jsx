@@ -1,86 +1,90 @@
 import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
+import "./productlist.css";
+import { products } from "./products";
+
+const DesktopProductList = () => {
+
+  return (
+
+    <div className="desktop-product-container" >
+
+      <div style={{  display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
+        <div style={{ display: "flex", alignItems: "center", gap: ".6em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em" }} >
+          <img src={sliders} alt="product filter" />
+          <p>
+            Filter
+          </p>
+        </div>
 
 
-const products = {
+        <div style={{ display: "flex", alignItems: "center", gap: ".5em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em" }} >
+          <p>
+            Sort: Latest Products
+          </p>
 
-  name: "Mahogany Wooden Chair",
-  description: "Embrace the timeless beauty of our Old world Chair Collection. Each piece is meticulously crafted from recliamed wood, , imbued with the rich patina and unique imperfections that tell a story. Discover rustic charm and enduring character that will grace your home for generations to come.",
-  price: "$1750",
-  // image:"../../assets/images/Mahogany-wooden-chair.png"
-image:"../../../public/vite.svg"
+          <img src={caretDown} alt="product filter" />
 
-
-
-
-
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </div>
 
 
 
 
 
 
-
-
-
-
-
-const ProductList = () => {
-
-return(
-
-<div  >
-
-    <div style={{display:"flex", justifyContent:"space-between"}} >
-      <div style={{display:"flex", alignItems:"center", gap:".6em",border:"2px grey solid", borderRadius:"4px", padding:".3em .6em"}} >
-        <img src={sliders} alt="product filter" /> 
-        <p>
-          Filter
-        </p>
       </div>
 
 
-       <div style={{display:"flex", alignItems:"center",  gap:".5em", border:"2px grey solid", borderRadius:"4px", padding:".3em .6em"}} >
-        <p>
-          Sort: Latest Products
-        </p>
-        
-        <img src={caretDown} alt="product filter" /> 
-        
+      <div className="product-container">
+
+        {
+
+          products.map((product) => {
+
+
+            return (
+
+
+              <div className="product-card" key={product.id}>
+                <div>
+                  <img src={product.image} alt="Product image" style={{ width: "100%" }} />
+                </div>
+                <h2>
+                  {
+                    product.name
+                  }
+                </h2>
+
+                <p>
+                  {
+                    product.price
+                  }
+                </p>
+
+              </div>
+
+            )
+
+
+          })
+
+        }
+
+
       </div>
 
 
-      <div>
-        {/* <img src= alt="" /> */}
+      <p style={{ textAlign: "center" }} >
+        <a href="#">
+          Explore more products
+        </a>
+      </p>
 
-        <img src={products.image} alt="" />
     </div>
 
-
-
-</div>
-
-  
-</div>
-
-)
+  )
 
 };
 
 
-export default ProductList;
+export default DesktopProductList;

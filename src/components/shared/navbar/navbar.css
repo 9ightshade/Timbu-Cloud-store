@@ -1,0 +1,10 @@
+.desktop-view-navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media(width < 769px){
+  .desktop-view-navbar{
+  display: none;
+}
+}
