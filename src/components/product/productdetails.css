@@ -1,0 +1,51 @@
+.x-button{
+  background-color: black;
+  color: white;
+  padding: 1em ;
+  font-size: 1rem;
+}
+.x-btn{
+  display: flex;
+  justify-content: flex-end;
+}
+.product-details{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+.action-btn{
+  display: flex;
+  gap: 1em;
+  margin: 6em 0;
+  align-items: center;
+}
+.atc-btn{
+  border: solid grey 1px;
+  padding: .4em 2em;
+  border-radius: 4px;
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+}
+.checkout-btn{
+  background-color: black;
+  color: grey;
+  border: none;
+  padding: .4em 2em;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.product-image , .more-abt-product{
+  height: 70vh;
+}
+.more-abt-product > h2{
+  margin: 0 0 .6em;
+}
+.more-abt-product > article{
+  margin: 4.3em 0 ;
+  font-size: 1.3rem;
+  color: grey;
+}
