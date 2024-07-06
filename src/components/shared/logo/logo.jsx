@@ -1,9 +1,11 @@
+import Timbu  from "../../../assets/images/LOGO.png";
+
 
 const Logo = ()=>{
 return(
-  <h1>
-  TIMBU
-  </h1>
+  <div  style={{cursor:"pointer"}} >
+    <img src={Timbu} alt="Timbu Logo" />
+  </div>
 )
 };
 

@@ -1,7 +1,7 @@
 const NavLinks = ()=>{
 
 return(
-<ul>
+<ul style={{display:"flex", gap:"1em", listStyle:"none"}} >
   <li>
     <a href="">
       Home
