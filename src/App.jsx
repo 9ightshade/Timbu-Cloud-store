@@ -1,3 +1,5 @@
+import Cart from "./components/cart/cart"
+import Checkout from "./components/checkout/checkout"
 import ProductDetails from "./components/product/productDetails"
 import DesktopProductList from "./components/product/productList"
 import Hero from "./components/shared/hero/hero"
@@ -9,7 +11,9 @@ function App() {
 
   return (
     <div style={{ padding: ".7em 3em" }} >
-      <ProductDetails/>
+      <Checkout/>
+     <Cart/>
+      <ProductDetails />
       <NavBar />
       <Hero />
       <DesktopProductList/>
