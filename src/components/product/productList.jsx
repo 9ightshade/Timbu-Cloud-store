@@ -2,6 +2,9 @@ import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
 import "./productlist.css";
 import { products } from "./products";
+import copyright from "../../assets/images/copyright.png";
+import Logo from "../shared/logo/logo";
+
 
 const DesktopProductList = () => {
 
@@ -9,7 +12,7 @@ const DesktopProductList = () => {
 
     <div className="desktop-product-container" >
 
-      <div style={{  display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
         <div style={{ display: "flex", alignItems: "center", gap: ".6em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em" }} >
           <img src={sliders} alt="product filter" />
           <p>
@@ -74,11 +77,26 @@ const DesktopProductList = () => {
       </div>
 
 
-      <p style={{ textAlign: "center" }} >
+      <p className="explore">
         <a href="#">
           Explore more products
         </a>
       </p>
+
+
+      <div className="copyright" >
+
+        <div>
+          <img src={copyright} alt="copyright" />
+        </div>
+        <Logo />
+        <p>
+          2024
+        </p>
+
+      </div>
+
+
 
     </div>
 
