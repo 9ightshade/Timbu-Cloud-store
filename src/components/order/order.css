@@ -1,0 +1,17 @@
+.Order-header{
+  margin: 2.2em 0;
+  
+}
+
+.Order-comp{
+  border: 1px solid pink;
+  width: 50%;
+}
+.total, .order-desc, .tax{
+  margin: 1.3em 0;
+  display: flex;
+  justify-content: space-between;
+}
+#banktransfer{
+  display: inline;
+}

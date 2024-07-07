@@ -1,6 +1,6 @@
-import Order from "../order/order";
 import NavBar from "../shared/navbar/navbar";
-
+import { products } from "../product/products";
+import "./checkout.css";
 const Checkout = () => {
   
   return (
@@ -8,81 +8,179 @@ const Checkout = () => {
     <div>
       <NavBar/>
 
-      <h1>
+      <h1  >
         Checkout
       </h1>
-      <p>
+
+      <a href="#" className="bck-to-shop">
+        Back to shop
+      </a>
+      <p className="coupon" >
         Have a coupon ? <a href="#">Click here to enter the code</a>
       </p>
       <form action="#" method="post">
-        <h2>
+        <h2 className="shipping" >
           Shipping Information
         </h2>
         <label htmlFor="firstname">
           First name
-          <div>
-            <input type="text" name="firstname" id="firstname" />
-       </div>
+        
         </label>
+        <div>
+          <input type="text" name="firstname" id="firstname" />
+        </div>
        
 
         <label htmlFor="lastname">
           Last name
-          <div>
-            <input type="text" name="lastname" id="lastname" />
-        </div>
+         
         </label>
+        <div>
+          <input type="text" name="lastname" id="lastname" />
+        </div>
         
         <label htmlFor="country/region">
           Country/Region
           
-          <div>
-            <input type="text" name="country/region" id="country-region" />
-          </div>
+         
         </label>
+        <div>
+          <input type="text" name="country/region" id="country-region" />
+        </div>
+
 
         <label htmlFor="address">
           Address
-          <div>
-            <input type="text" name="address" id="address" />
-</div>
+   
         </label>
+        <div>
+          <input type="text" name="address" id="address" />
+        </div>
+
 
         <label htmlFor="city">
           City
-          <div>
-            <input type="text" name="city" id="city" />
-          </div>
+         
         </label>
-        
+        <div>
+          <input type="text" name="city" id="city" />
+        </div>
 
         <label htmlFor="state">
           State
-          <div>
-            <input type="text" name="state" id="state" />
-          </div>
+          
         </label>
-
+        <div>
+          <input type="text" name="state" id="state" />
+        </div>
         
         <label htmlFor="email">
           Email 
-          <div>
-            <input type="email" name="email" id="email" />
-          </div>
+         
         </label>
-        
+        <div>
+          <input type="email" name="email" id="email" />
+        </div>
+
+
         <label htmlFor="phone">
           Phone 
-          <div>
-            <input type="tel" name="phone" id="phone" />
-          </div>
+         
         </label>
+        <div>
+          <input type="tel" name="phone" id="phone" />
+        </div>
 
 </form>
 
       
 
-<Order/>
+      <div className="Order-comp" >
+        <h2 className="Order-header">
+          Your Order
+        </h2>
+        <div className="order-desc" >
+          <p>
+            {products[2].name} x1</p> <p className="order-price" >
+            {products[2].price}
+          </p>
+        </div>
+
+        <p className="order-desc" >
+          {products[2].name} x1 <span className="order-price" >
+            {products[2].price}
+          </span>
+        </p>
+
+        <div className="tax" >
+          <p>
+            Tax
+          </p>
+          <p>
+            0.99
+          </p>
+        </div>
+
+        <div className="total" >
+          <p>
+            Total
+          </p>
+          <p>
+            $3900.99
+          </p>
+        </div>
+
+
+        <h3>
+          Payment Method
+        </h3>
+        <form action="#" method="post" className="payment-form" >
+          <div className="bank-transfer" >
+            <input type="radio" name="payment" id="banktransfer" />
+            <label htmlFor="bank-transfer">
+              Bank Transfer
+            </label>
+         </div>
+
+
+          <div className="bankcard" >
+            <input type="radio" name="payment" id="bankcard" />
+            <label htmlFor="bank-card">
+              Bank card
+            </label>
+          </div>
+
+
+          <div className="cash-on" >
+            <input type="radio" name="payment" id="cash-on-delivery" />
+            <label htmlFor="bank-transfer">
+              Cash On Delivery
+            </label>
+      </div>
+
+          <div className="TC-container" >
+            <input type="checkbox" name="T&C" id="T&C" />
+            <p>
+              I have read and agreed to <span>TIMBU'S </span>
+              <a href="#">
+                Terms and Conditions
+               </a> and
+               <a href="#">
+                Privacy Policy
+              </a>
+            </p>
+          </div>
+
+          <button type="submit">
+            Complete Order
+          </button>
+
+        </form>
+
+
+
+
+      </div>
 
 
 

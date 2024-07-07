@@ -1,0 +1,88 @@
+.bck-to-shop{
+  display: block;
+  text-align: end;
+}
+h1 {
+  text-align: center;
+}
+h1{
+  font-size: 1.8rem;
+  margin: 2em 0 0;
+}
+.shipping{
+  margin: 2em 0 1em;
+}
+.coupon{
+  color: grey;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin: .7em 0;
+  color: grey;
+}
+input{
+  width: 100%;
+  height: 30px;
+  border: grey 1px solid;
+  border-radius: 4px;
+
+}
+input[type=radio]{
+  width: 15px;
+}
+
+input[type=checkbox]{
+  width: 18px;
+  border: 1px grey solid;
+  color: black;
+}
+.TC-container, .cash-on, .bankcard, .bank-transfer{
+display: flex;
+align-items: center;
+gap: 1em;
+}
+
+.TC-container> p{
+  color: grey;
+}
+.TC-container > p > a{
+  margin-left: .2em;
+}
+.TC-container > p > span{
+  color: black;
+  font-weight: 600;
+}
+button[type=submit]{
+  background-color: black;
+  color: white;
+  border: none;
+  margin: 2.5em 0;
+  width: 90%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 1.4em 2em;
+}
+
+.Order-header {
+  margin: 2.2em 0;
+
+}
+
+.Order-comp {
+  /* border: 1px solid pink; */
+  width: 50%;
+}
+
+.total,
+.order-desc,
+.tax {
+  margin: 1.3em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#banktransfer {
+  display: inline;
+}
