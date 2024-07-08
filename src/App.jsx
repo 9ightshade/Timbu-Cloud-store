@@ -10,10 +10,7 @@ function App() {
 
   return (
     <div style={{ padding: ".7em 3em" }} >
-      {/* <Checkout/> */}
-     {/* <Cart/> */}
-      
-    <ProductInfo/>
+      <Product/>
     </div>
   )
 }

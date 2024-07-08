@@ -15,7 +15,13 @@ const NavBar = () => {
 
 
       <div className="mobile-view-navbar" >
-
+        <Logo />
+        <NavIcons />
+        <div className="hamburger" >
+          <hr />
+          <hr />
+          <hr />
+        </div>
       </div>
     </div>
 

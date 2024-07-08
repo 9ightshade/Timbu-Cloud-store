@@ -2,7 +2,12 @@ const MobileNavBar = () => {
   return (
     
 
-    
+    <div>
+      <Logo />
+      
+
+
+    </div>
   )
 
 

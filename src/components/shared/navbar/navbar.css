@@ -3,6 +3,23 @@
   justify-content: space-between;
   align-items: center;
 }
+.mobile-view-navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8em;
+}
+.hamburger{
+  border: none;
+width: 30px;
+background-color: transparent;
+}
+.hamburger > hr{
+  width:100%;
+height: 10px;
+/* background-color: red; */
+}
+
 @media(width < 769px){
   .desktop-view-navbar{
   display: none;
