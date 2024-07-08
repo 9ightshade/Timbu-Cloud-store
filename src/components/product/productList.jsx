@@ -7,7 +7,7 @@ import { products } from "./products";
 import Footer from "../shared/footer/footer";
 
 
-const DesktopProductList = () => {
+const ProductList = () => {
 
   return (
 
@@ -98,4 +98,4 @@ const DesktopProductList = () => {
 };
 
 
-export default DesktopProductList;
+export default ProductList;

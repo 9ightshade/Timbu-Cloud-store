@@ -6,7 +6,7 @@ const ProductDetails = () => {
 
     <div>
       <div className="x-btn" >
-        <button className="x-button" >
+        <button className="x" >
           X
         </button>
 
