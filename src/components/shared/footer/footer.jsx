@@ -1,25 +1,21 @@
-const Footer = ()=>{
+import copyright from "../../../assets/images/copyright.png"
+import Logo from "../logo/logo";
+
+const Footer = () => {
 
 return(
 
-<div>
-<div>
+  <div className="copyright" >
 
+    <div>
+      <img src={copyright} alt="copyright" />
+    </div>
+    <Logo/>
+    <p>
+      2024
+    </p>
 
-
-
-
-</div>
-
-<p>
-  @copy TIMBU 2024
-</p>
-
-
-
-
-
-</div>
+  </div>
 
 
 )

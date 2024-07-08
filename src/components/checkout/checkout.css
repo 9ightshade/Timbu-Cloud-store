@@ -73,6 +73,7 @@ button[type=submit]{
 .Order-comp {
   /* border: 1px solid pink; */
   width: 50%;
+  margin-bottom: 6em;
 }
 
 .total,
@@ -85,4 +86,15 @@ button[type=submit]{
 
 #banktransfer {
   display: inline;
+}
+@media(width < 768px){
+  .Order-comp{
+    width: 100%;
+  }
+  .bck-to-shop{
+    display: none;
+  }
+  button[type="submit"]{
+    width: 100%;
+  }
 }

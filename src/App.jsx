@@ -12,11 +12,11 @@ function App() {
   return (
     <div style={{ padding: ".7em 3em" }} >
       <Checkout/>
-     <Cart/>
-      <ProductDetails />
-      <NavBar />
-      <Hero />
-      <DesktopProductList/>
+     {/* <Cart/> */}
+      {/* <ProductDetails /> */}
+      {/* <NavBar /> */}
+      {/* <Hero /> */}
+      {/* <DesktopProductList/> */}
     </div>
   )
 }

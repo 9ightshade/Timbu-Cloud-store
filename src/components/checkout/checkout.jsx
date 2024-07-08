@@ -1,6 +1,7 @@
 import NavBar from "../shared/navbar/navbar";
 import { products } from "../product/products";
 import "./checkout.css";
+import Footer from "../shared/footer/footer";
 const Checkout = () => {
   
   return (
@@ -156,12 +157,12 @@ const Checkout = () => {
             <label htmlFor="bank-transfer">
               Cash On Delivery
             </label>
-      </div>
+      </div >
 
           <div className="TC-container" >
             <input type="checkbox" name="T&C" id="T&C" />
             <p>
-              I have read and agreed to <span>TIMBU'S </span>
+              I have read and agreed to <span>TIMBU&apos;S </span>
               <a href="#">
                 Terms and Conditions
                </a> and
@@ -182,7 +183,7 @@ const Checkout = () => {
 
       </div>
 
-
+<Footer/>
 
 
     </div>

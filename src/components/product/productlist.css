@@ -16,6 +16,7 @@
 }
 .product-card{
 text-align: center;
+width: 100%;
 max-width: 400px;
 margin: 0 auto;
   transition: all;
@@ -61,7 +62,8 @@ margin-bottom: 1.2em;
   margin-bottom: .3em;
 }
 @media(width < 769px){
-  .desktop-product-container{
-    display: none;
+  
+  .product-container{
+    display: block;
   }
 }

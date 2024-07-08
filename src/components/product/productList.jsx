@@ -2,8 +2,9 @@ import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
 import "./productlist.css";
 import { products } from "./products";
-import copyright from "../../assets/images/copyright.png";
-import Logo from "../shared/logo/logo";
+// import copyright from "../../assets/images/copyright.png";
+// import Logo from "../shared/logo/logo";
+import Footer from "../shared/footer/footer";
 
 
 const DesktopProductList = () => {
@@ -84,18 +85,8 @@ const DesktopProductList = () => {
       </p>
 
 
-      <div className="copyright" >
-
-        <div>
-          <img src={copyright} alt="copyright" />
-        </div>
-        <Logo />
-        <p>
-          2024
-        </p>
-
-      </div>
-
+     
+<Footer/>
 
 
     </div>
