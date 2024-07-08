@@ -1,6 +1,7 @@
 import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
 import fav from "../../assets/images/fav.png";
+import atc from "../../assets/images/add-to-cart.png";
 import "./productlist.css";
 import { products } from "./products";
 import Footer from "../shared/footer/footer";
@@ -60,7 +61,7 @@ const ProductList = () => {
                     </button>
 
                     <button className="shop-cart" >
-                      <img src={fav} alt="cart" />
+                      <img src={atc} alt="cart" />
                     </button>
 </div>
                 </div>

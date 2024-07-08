@@ -104,8 +104,13 @@ margin-bottom: 1.2em;
   border: grey solid 1px ;
   padding: .7em ;
   cursor: pointer;
+
 }
 
+.fav{
+  transition: all;
+  transition-duration: .8s;
+}
 .fav:hover{
   background-color: grey;
 
