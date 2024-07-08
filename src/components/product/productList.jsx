@@ -14,7 +14,7 @@ const DesktopProductList = () => {
     <div className="desktop-product-container" >
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
-        <div style={{ display: "flex", alignItems: "center", gap: ".6em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em" }} >
+        <div  className="filter-product">
           <img src={sliders} alt="product filter" />
           <p>
             Filter
@@ -32,7 +32,9 @@ const DesktopProductList = () => {
         </div>
 
 
-
+        <div className="mobile-filter" >
+          <img src={sliders} alt="product filter" />
+</div>
 
 
 
