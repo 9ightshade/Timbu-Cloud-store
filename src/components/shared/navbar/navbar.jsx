@@ -1,6 +1,7 @@
 import Logo from "../logo/logo";
 import NavIcons from "./navIcons";
 import NavLinks from "./navlinks";
+import hamburger from "../../../assets/images/hamburger.png";
 import "./navbar.css";
 
 const NavBar = () => {
@@ -14,15 +15,13 @@ const NavBar = () => {
       </div>
 
 
-      {/* <div className="mobile-view-navbar" >
+       <div className="mobile-view-navbar" >
         <Logo />
         <NavIcons />
         <div className="hamburger" >
-          <hr />
-          <hr />
-          <hr />
+          <img src={hamburger} alt="hamburger" />
         </div>
-      </div> */}
+      </div> 
     </div>
 
   )
