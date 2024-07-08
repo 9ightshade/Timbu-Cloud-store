@@ -2,8 +2,6 @@ import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
 import "./productlist.css";
 import { products } from "./products";
-// import copyright from "../../assets/images/copyright.png";
-// import Logo from "../shared/logo/logo";
 import Footer from "../shared/footer/footer";
 
 
@@ -14,7 +12,7 @@ const ProductList = () => {
     <div className="desktop-product-container" >
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
-        <button  className="filter-product">
+        <button className="filter-product">
           <img src={sliders} alt="product filter" />
           <p>
             Filter
@@ -22,7 +20,7 @@ const ProductList = () => {
         </button>
 
 
-        <button style={{ display: "flex", alignItems: "center", gap: ".5em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em", background:"transparent"}} >
+        <button className="sorting" >
           <p>
             Sort: Latest Products
           </p>
@@ -34,7 +32,7 @@ const ProductList = () => {
 
         <div className="mobile-filter" >
           <img src={sliders} alt="product filter" />
-</div>
+        </div>
 
 
 
@@ -87,8 +85,8 @@ const ProductList = () => {
       </p>
 
 
-     
-<Footer/>
+
+      <Footer />
 
 
     </div>
