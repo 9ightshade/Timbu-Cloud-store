@@ -14,22 +14,22 @@ const ProductList = () => {
     <div className="desktop-product-container" >
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
-        <div  className="filter-product">
+        <button  className="filter-product">
           <img src={sliders} alt="product filter" />
           <p>
             Filter
           </p>
-        </div>
+        </button>
 
 
-        <div style={{ display: "flex", alignItems: "center", gap: ".5em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em" }} >
+        <button style={{ display: "flex", alignItems: "center", gap: ".5em", border: "1px grey solid", borderRadius: "4px", padding: ".5em 1em", background:"transparent"}} >
           <p>
             Sort: Latest Products
           </p>
 
           <img src={caretDown} alt="product filter" />
 
-        </div>
+        </button>
 
 
         <div className="mobile-filter" >

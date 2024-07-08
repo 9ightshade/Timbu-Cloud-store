@@ -12,7 +12,7 @@ const Hero = () => {
       </div>
 
 
-      <h2 style={{ margin: "1.3em 0" }} >
+      <h2 className="all-products" >
         All Products
       </h2>
     </div>

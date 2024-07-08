@@ -17,3 +17,17 @@
   font-size: 3rem;
 
 }
+.all-products{
+  margin: 2em 0em;
+  transition: all;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+.all-products:hover{
+  text-decoration: underline;
+}
+@media(width < 769px){
+.all-products{
+  margin-left: 1em;
+}
+};
