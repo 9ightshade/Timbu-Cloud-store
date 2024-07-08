@@ -1,5 +1,6 @@
 import sliders from "../../assets/images/Sliders.png"
 import caretDown from "../../assets/images/CaretDown.png";
+import fav from "../../assets/images/fav.png";
 import "./productlist.css";
 import { products } from "./products";
 import Footer from "../shared/footer/footer";
@@ -50,10 +51,20 @@ const ProductList = () => {
 
 
               <div className="product-card" key={product.id}>
-                <div>
+                <div className="product-image"  >
                   <img src={product.image} alt="Product image" style={{ width: "100%" }} />
+
+                  <div className="fav-cart"  >
+                    <button className="fav" >
+                      <img src={fav} alt="fav" />
+                    </button>
+
+                    <button className="shop-cart" >
+                      <img src={fav} alt="cart" />
+                    </button>
+</div>
                 </div>
-                <h2>
+                <h2 className="product-name" >
                   {
                     product.name
                   }
