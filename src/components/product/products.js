@@ -1,9 +1,12 @@
+import mahogany from "../../../public/assets/images/Mahogany-wooden-chair.png";
+
+
 export const products = [{
   id: 1,
   name: "Mahogany Wooden Chair",
   description: "Embrace the timeless beauty of our Old world Chair Collection. Each piece is meticulously crafted from recliamed wood, , imbued with the rich patina and unique imperfections that tell a story. Discover rustic charm and enduring character that will grace your home for generations to come.",
   price: "$1750",
-  image: "../../../public/assets/images/Mahogany-wooden-chair.png",
+  image: mahogany,
 },
 {
   id: 2,

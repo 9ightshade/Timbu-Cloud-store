@@ -1,6 +1,6 @@
 import copyright from "../../../assets/images/copyright.png"
 import Logo from "../logo/logo";
-
+import "./footer.css";
 const Footer = () => {
 
 return(
