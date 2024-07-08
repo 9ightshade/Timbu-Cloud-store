@@ -1,16 +1,21 @@
-import heroImage from "../../../assets/images/hero-image.png"
-const Hero = ()=>{
+import "./hero.css";
 
-  return(
-    <div>
-      <div>
-      <img src={heroImage} style={{ width: "100%" }} alt="hero image" />
+const Hero = () => {
+
+  return (
+    <div className="
+    hero-container" >
+      <div className="hero-image" >
+        <h1 className="shop" >
+          Shop
+        </h1>
       </div>
-      
-      <h2 style={{margin:"1.3em 0"}} >
+
+
+      <h2 style={{ margin: "1.3em 0" }} >
         All Products
       </h2>
-  </div>
+    </div>
   )
 };
 

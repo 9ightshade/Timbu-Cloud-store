@@ -5,12 +5,12 @@ import cart from "../../../assets/images/Cart.png";
 import "./navicons.css";
 
 
-const NavIcons = ()=>{
+const NavIcons = () => {
 
-  return(
+  return (
     <div className="navicons " >
       <div>
-       <img src={search} alt="search icon" />
+        <img src={search} alt="search icon" />
       </div>
       <div>
         <img src={profile} alt="profile icon" />
@@ -23,6 +23,6 @@ const NavIcons = ()=>{
       </div>
     </div>
   )
-}
+};
 
 export default NavIcons;

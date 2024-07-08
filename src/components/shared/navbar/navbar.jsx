@@ -14,7 +14,7 @@ const NavBar = () => {
       </div>
 
 
-      <div className="mobile-view-navbar" >
+      {/* <div className="mobile-view-navbar" >
         <Logo />
         <NavIcons />
         <div className="hamburger" >
@@ -22,7 +22,7 @@ const NavBar = () => {
           <hr />
           <hr />
         </div>
-      </div>
+      </div> */}
     </div>
 
   )
