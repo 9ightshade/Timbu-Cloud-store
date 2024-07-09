@@ -1,121 +1,176 @@
-.cancel-btn{
-  /* border: red solid 2px; */
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  /* width: 50px; */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+
+@media(width> 600px){
 
 .product-container{
-  display: flex;
-height: 80vh;
-align-items: center;
-justify-content: center;
-}
-.product-details{
-display: flex;
-gap: 1em;
-/* align-items: center; */
-/* border: solid black; */
-
-}
-.product-price{
-  margin-top: .7em;
-}
-section{
-  position: relative;
-}
-.action-btn{
-  display: flex;
-  align-items: center;
-  gap: .7em;
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 2em;
-}
-.atc-btn{
-  
-}
-.product-price, article  {
-  color: grey;
-  font-size: 1.3rem;
-  margin-bottom: 2.5em;
-}
-
-
-@media(width < 840px){
-
-  .product-details{
-    flex-direction: column;
-  }
-}
-
-
-
-/* @media(width < 769px){
-.product-details{
-  flex-direction: column;
-}
-.product-image{
-  width: 100%;
-  border: 2px red solid;
-}
-} */
-
-
-/* 
-.x-btn{
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer;
-  height: 60px;
+  /* border: solid red ; */
+  height: 100vh;
 }
 
 .product-details{
-  width: 80%;
-  border: 2px red solid ; 
-  margin: 0 auto;
+  /* border: solid green ; */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 2em;
+  /* padding: 1em 0; */
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
 }
-.action-btn{
-  display: flex;
-  gap: 1em;
-  margin: 6em 0;
-  align-items: center;
-}
-.atc-btn{
-  border: solid grey 1px;
-  padding: .7em 2em;
-  border-radius: 4px;
-  background-color: transparent;
-  color: black;
-  font-weight: 600;
-  cursor: pointer;
-}
-.checkout-btn{
-  background-color: black;
-  color: grey;
-  border: none;
+.action-btn {
+  /* border: solid green; */
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: .8em;
-  padding: .7em 2em;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: 600;
+  gap: 1em;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: .5em;
 }
-.product-image , .more-abt-product{
-  height: 70vh;
-}
-.more-abt-product > h2{
-  margin: 0 0 .6em;
-}
-.more-abt-product > article{
-  margin: 4.3em 0 ;
-  font-size: 1.3rem;
+
+.checkout-btn {
+  display: flex;
+  background-color: black;
   color: grey;
-} */
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  gap: 1em;
+  /* font-size: 2.5vh; */
+  padding: .7em 3em;
+  border-radius: 4px;
+}
+
+.atc-btn {
+  display: flex;
+  background-color: transparent;
+  border: 1px solid grey;
+  cursor: pointer;
+  justify-content: center;
+  gap: 1em;
+  /* font-size: 2.5vh; */
+  padding: .8em 1em;
+  border-radius: 4px;
+}
+h2:hover{
+text-decoration: underline;
+cursor: pointer;
+}
+.atc-btn, .checkout-btn, h2{
+  transition: all;
+  transition-duration: .3s;
+}
+.atc-btn:hover{
+  background-color: rgb(219, 211, 211);
+}
+.checkout-btn:hover{
+  background-color: rgb(51, 51, 51);
+}
+
+
+ section>p, article {
+   color: grey;
+   margin: 1em 0 2.5em;
+ }
+article{
+  margin: 4em 0;
+}
+
+
+
+}
+
+
+
+@media(width < 600px){
+.product-details {
+    border: solid green;
+    /* width: 50%; */
+  }
+
+  .product-image {
+    /* border: solid pink; */
+    width: 100%;
+  }
+
+  .product-image>img {
+    width: 100%;
+  }
+
+  section {
+    /* border: green solid; */
+    padding: 0 0 1em;
+  }
+
+  section>p {
+    color: grey;
+    text-align: center;
+    margin: 1em 0 2.5em;
+  }
+
+  article {
+    color: grey;
+    text-align: center;
+    margin: 0 0 3em;
+  }
+
+  .action-btn {
+    /* border: solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.atc-btn,
+.checkout-btn,
+h2 {
+  transition: all;
+  transition-duration: .3s;
+}
+
+.atc-btn:hover {
+  background-color: rgb(219, 211, 211);
+}
+
+.checkout-btn:hover {
+  background-color: rgb(51, 51, 51);
+}
+  .checkout-btn {
+    display: flex;
+    background-color: black;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    justify-content: center;
+    gap: 1em;
+    /* font-size: 2.5vh; */
+    padding: .7em 3em;
+    border-radius: 4px;
+  }
+
+  .atc-btn {
+    display: flex;
+    background-color: transparent;
+    border: 1px solid grey;
+    cursor: pointer;
+    justify-content: center;
+    gap: 1em;
+    /* font-size: 2.5vh; */
+    padding: .8em 1em;
+    border-radius: 4px;
+  }
+  
+};
+
+
+
+

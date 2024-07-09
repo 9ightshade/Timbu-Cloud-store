@@ -8,19 +8,17 @@ function App() {
 
 
   return (
-    <div style={{ padding: ".7em 3em" }} >
+    
       <BrowserRouter>
 
         <Routes>
 
           <Route path="/" element={<Product />} />
-          <Route path="/productDetails" element={<ProductInfo />} />
-          <Route path="/checkout" element={<CheckoutPage/> }  />
+          <Route path="/productDetails" element={<ProductInfo/>}/>
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Routes>
-
-
       </BrowserRouter>
-    </div>
+  
   )
 }
 
