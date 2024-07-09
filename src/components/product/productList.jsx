@@ -12,7 +12,7 @@ import { useState } from "react";
 
 const ProductList = () => {
 
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const modalTrigger = () => {
     console.log(isVisible);
