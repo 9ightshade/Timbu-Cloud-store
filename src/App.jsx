@@ -1,3 +1,4 @@
+import CartPage from "./pages/cartPage"
 import CheckoutPage from "./pages/checkout"
 import Product from "./pages/product"
 import ProductInfo from "./pages/productInfo"
@@ -14,10 +15,10 @@ function App() {
       <BrowserRouter>
 
         <Routes>
-
           <Route path="/" element={<Product />} />
           <Route path="/productDetails" element={<ProductInfo />} />
           <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/cart" element={<CartPage/>} />
         </Routes>
       </BrowserRouter>
       

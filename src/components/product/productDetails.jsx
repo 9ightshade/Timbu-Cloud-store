@@ -20,9 +20,14 @@ const ProductDetails = () => {
 
   
   const navigate = useNavigate();
-  const handleClick = () => {
-    navigate("/checkout");
-  };
+  const handleClick = (value) => {
+    if (value === 1) {
+      navigate("/checkout");
+    }
+    else if (value === 2) {
+      navigate("/cart")
+    }
+};
 
 
   return (
@@ -52,11 +57,11 @@ const ProductDetails = () => {
 
 
           <div className="action-btn" >
-            <button className="atc-btn" onClick={handleClick}  >
+            <button className="atc-btn" onClick={()=>{handleClick(2)}}  >
               Add to Cart
             </button>
 
-            <button className="checkout-btn" onClick={handleClick}  >
+            <button className="checkout-btn" onClick={()=>{handleClick(1)}}  >
               <span>
                 Checkout
               </span>
