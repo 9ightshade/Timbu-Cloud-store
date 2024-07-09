@@ -2,19 +2,22 @@ import { products } from "../../components/product/products";
 import "./cart.css";
 import { useState } from "react";
 import caretright from "../../assets/images/caret-right.png";
+import { useNavigate } from "react-router-dom";
 
 const Cart = () => {
 
-
+  const navigate = useNavigate();
   const [quantity, setQuantity] = useState(1);
 
   function handleClick(action) {
 
     if (action === 1) {
-      setQuantity(quantity + 1)
+      navigate("/")
+      // setQuantity(quantity + 1)
     }
     else {
-      setQuantity(quantity - 1)
+navigate("/productDetails")
+      // setQuantity(quantity - 1)
     }
 
   }
@@ -64,7 +67,7 @@ const Cart = () => {
 
 
         <div className="x" >
-          <button className="x-btn" >
+          <button className="x-btn" onClick={()=>{handleClick(1)}}  >
             x
           </button>
         </div>
