@@ -11,7 +11,7 @@ return(
       <img src={copyright} alt="copyright" />
     </div>
     <Logo/>
-    <p>
+    <p className="year" >
       2024
     </p>
 

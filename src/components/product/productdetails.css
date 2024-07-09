@@ -87,10 +87,6 @@ article{
 
 
 @media(width < 600px){
-.product-details {
-    border: solid green;
-    /* width: 50%; */
-  }
 
   .product-image {
     /* border: solid pink; */
