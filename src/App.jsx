@@ -1,8 +1,7 @@
-import Cart from "./components/cart/cart"
-import Checkout from "./components/checkout/checkout"
-import ProductDetails from "./components/product/productDetails"
+import CheckoutPage from "./pages/checkout"
 import Product from "./pages/product"
 import ProductInfo from "./pages/productInfo"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 
 function App() {
@@ -10,7 +9,17 @@ function App() {
 
   return (
     <div style={{ padding: ".7em 3em" }} >
-      <Product/>
+      <BrowserRouter>
+
+        <Routes>
+
+          <Route path="/" element={<Product />} />
+          <Route path="/productDetails" element={<ProductInfo />} />
+          <Route path="/checkout" element={<CheckoutPage/> }  />
+        </Routes>
+
+
+      </BrowserRouter>
     </div>
   )
 }

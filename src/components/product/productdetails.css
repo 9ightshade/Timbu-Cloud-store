@@ -1,17 +1,79 @@
-.x{
-  background-color: black;
-  color: white;
-  padding: 1em ;
-  cursor: pointer;
-  border: none;
-  font-size: 1rem;
+.cancel-btn{
+  /* border: red solid 2px; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* width: 50px; */
 }
+
+.product-container{
+  display: flex;
+height: 80vh;
+align-items: center;
+justify-content: center;
+}
+.product-details{
+display: flex;
+gap: 1em;
+/* align-items: center; */
+/* border: solid black; */
+
+}
+.product-price{
+  margin-top: .7em;
+}
+section{
+  position: relative;
+}
+.action-btn{
+  display: flex;
+  align-items: center;
+  gap: .7em;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2em;
+}
+.atc-btn{
+  
+}
+.product-price, article  {
+  color: grey;
+  font-size: 1.3rem;
+  margin-bottom: 2.5em;
+}
+
+
+@media(width < 840px){
+
+  .product-details{
+    flex-direction: column;
+  }
+}
+
+
+
+/* @media(width < 769px){
+.product-details{
+  flex-direction: column;
+}
+.product-image{
+  width: 100%;
+  border: 2px red solid;
+}
+} */
+
+
+/* 
 .x-btn{
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
+  height: 60px;
 }
+
 .product-details{
   width: 80%;
+  border: 2px red solid ; 
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -26,7 +88,7 @@
 }
 .atc-btn{
   border: solid grey 1px;
-  padding: .4em 2em;
+  padding: .7em 2em;
   border-radius: 4px;
   background-color: transparent;
   color: black;
@@ -37,7 +99,11 @@
   background-color: black;
   color: grey;
   border: none;
-  padding: .4em 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .8em;
+  padding: .7em 2em;
   border-radius: 4px;
   cursor: pointer;
   font-weight: 600;
@@ -52,4 +118,4 @@
   margin: 4.3em 0 ;
   font-size: 1.3rem;
   color: grey;
-}
+} */

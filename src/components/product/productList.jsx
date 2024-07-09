@@ -5,9 +5,21 @@ import atc from "../../assets/images/add-to-cart.png";
 import "./productlist.css";
 import { products } from "./products";
 import Footer from "../shared/footer/footer";
-
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const ProductList = () => {
+  const [action, setAction] = useState(0);
+  const navigate = useNavigate();
+
+  const handleClick = (action) => {
+    if (action === 1) {
+      navigate("/productDetails");
+    }
+    else {
+      navigate("/");
+    }
+  };
+
 
   return (
 
@@ -56,11 +68,11 @@ const ProductList = () => {
                   <img src={product.image} alt="Product image" style={{ width: "100%" }} />
 
                   <div className="fav-cart"  >
-                    <button className="fav" >
+                    <button className="fav" onClick={()=>{handleClick(1)}} >
                       <img src={fav} alt="fav" />
                     </button>
 
-                    <button className="shop-cart" >
+                    <button className="shop-cart"  onClick={()=>{handleClick(1)}} >
                       <img src={atc} alt="cart" />
                     </button>
 </div>
