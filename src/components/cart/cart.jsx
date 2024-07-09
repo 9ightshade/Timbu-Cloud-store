@@ -15,8 +15,8 @@ const Cart = () => {
       navigate("/")
       // setQuantity(quantity + 1)
     }
-    else {
-navigate("/productDetails")
+    else if(action === 2) {
+navigate("/checkout")
       // setQuantity(quantity - 1)
     }
 
@@ -57,7 +57,7 @@ navigate("/productDetails")
         {/* <button onClick={() => { handleClick(1) }} >+</button>
       <button onClick={() => { handleClick(0) }} >-</button> */}
 
-        <button className="checkout-btn" onClick={handleClick}  >
+        <button className="checkout-btn" onClick={()=>{handleClick(2)}}  >
           <span>
             Checkout
           </span>
