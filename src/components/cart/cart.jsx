@@ -1,54 +1,82 @@
 import { products } from "../../components/product/products";
-import "../product/productdetails.css";
-
+import "./cart.css";
+import { useState } from "react";
+import caretright from "../../assets/images/caret-right.png";
 
 const Cart = () => {
 
-  return (
-
-    <div style={{ maxWidth: "500px", }} >
-
-      <h1>
-        Cart
-      </h1>
-
-      <div>
-        <img src={products[2].image} alt="" />
-      </div>
-
-      <h2>
-        {products[2].name}
-      </h2>
-
-      <p style={{ color: "grey" }} >
-        {
-          products[2].price
-        }
-      </p>
-
-      <p style={{ color: "grey", margin: "1em 0" }} >
-        Quantity <span style={{ border: "1px solid grey", borderRadius: "5px", padding: ".3em .8em", margin: "0 0 0 .3em" }} >
-          1
-        </span>
-      </p>
-
-      <button className="checkout-btn" >
-        Checkout
-      </button>
 
 
-      <div className="x-btn" >
-        <button className="x-button" >
-          x
+  const [quantity, setQuantity] = useState(1);
+
+  function handleClick(action) {
+
+    if (action === 1) {
+      setQuantity(quantity + 1)
+    }
+    else {
+      setQuantity(quantity - 1)
+    }
+
+  }
+
+  
+
+    return (
+
+    
+      < div className="cart-modal active " >
+
+        <h2>
+          Cart
+        </h2>
+
+        <div className="cart-image" >
+          <img src={products[7].image} alt="product image" />
+        </div>
+
+        <h3>
+          {
+            products[7].name
+          }
+        </h3>
+
+        <p className="price" >
+          {
+            products[7].price
+          }
+        </p>
+
+        <p className="qty" >
+          Qauntity: <span>
+            {quantity}
+          </span>
+        </p>
+        {/* <button onClick={() => { handleClick(1) }} >+</button>
+      <button onClick={() => { handleClick(0) }} >-</button> */}
+
+        <button className="checkout-btn" onClick={handleClick}  >
+          <span>
+            Checkout
+          </span>
+          <img src={caretright} alt="checkout button" />
         </button>
+
+
+
+        <div className="x" >
+          <button className="x-btn" >
+            x
+          </button>
+        </div>
+
+
+      
       </div>
-    </div>
 
 
-
-
-  )
-
+    )
+  
 
 
 };

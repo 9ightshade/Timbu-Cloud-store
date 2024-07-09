@@ -6,9 +6,20 @@ import "./productlist.css";
 import { products } from "./products";
 import Footer from "../shared/footer/footer";
 import { useNavigate } from "react-router-dom";
+import Cart from "../cart/cart";
+import { useState } from "react";
 
 
 const ProductList = () => {
+
+  const [isVisible, setIsVisible] = useState(true);
+
+  const modalTrigger = () => {
+    console.log(isVisible);
+    setIsVisible(!isVisible)
+}
+
+
 
   const navigate = useNavigate();
 
@@ -26,6 +37,11 @@ const ProductList = () => {
 
     <div className="desktop-product-container" >
 
+      
+      {
+        isVisible?<Cart/>:null
+      }
+      
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
         <button className="filter-product">
           <img src={sliders} alt="product filter" />
@@ -48,7 +64,7 @@ const ProductList = () => {
         <div className="mobile-filter" >
           <img src={sliders} alt="product filter" />
         </div>
-
+        
 
 
       </div>
@@ -69,7 +85,7 @@ const ProductList = () => {
                   <img src={product.image} alt="Product image" style={{ width: "100%" }} />
 
                   <div className="fav-cart"  >
-                    <button className="fav" onClick={()=>{handleClick(1)}} >
+                    <button className="fav" onClick={()=>{modalTrigger()}} >
                       <img src={fav} alt="fav" />
                     </button>
 
@@ -114,6 +130,7 @@ const ProductList = () => {
       <Footer />
 
 
+      
     </div>
 
   )
