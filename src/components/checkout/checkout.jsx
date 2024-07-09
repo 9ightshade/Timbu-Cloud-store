@@ -2,8 +2,18 @@ import NavBar from "../shared/navbar/navbar";
 import { products } from "../product/products";
 import "./checkout.css";
 import Footer from "../shared/footer/footer";
+import { useNavigate } from "react-router-dom";
 const Checkout = () => {
   
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+  
+    navigate("/");
+
+}
+
+
   return (
   
     <div>
@@ -13,7 +23,7 @@ const Checkout = () => {
         Checkout
       </h1>
 
-      <a href="#" className="bck-to-shop">
+      <a href="#" className="bck-to-shop" onClick={handleClick} >
         Back to shop
       </a>
       <p className="coupon" >

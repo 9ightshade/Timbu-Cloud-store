@@ -54,6 +54,7 @@ gap: 1em;
   color: black;
   font-weight: 600;
 }
+
 button[type=submit]{
   background-color: black;
   color: white;

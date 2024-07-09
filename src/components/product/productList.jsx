@@ -17,7 +17,7 @@ const ProductList = () => {
   const modalTrigger = () => {
     console.log(isVisible);
     setIsVisible(!isVisible)
-}
+  }
 
 
 
@@ -37,11 +37,11 @@ const ProductList = () => {
 
     <div className="desktop-product-container" >
 
-      
+
       {
-        isVisible?<Cart/>:null
+        isVisible ? <Cart /> : null
       }
-      
+
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "0 0 2.5em 0" }} >
         <button className="filter-product">
           <img src={sliders} alt="product filter" />
@@ -64,7 +64,7 @@ const ProductList = () => {
         <div className="mobile-filter" >
           <img src={sliders} alt="product filter" />
         </div>
-        
+
 
 
       </div>
@@ -80,19 +80,19 @@ const ProductList = () => {
             return (
 
 
-              <div className="product-card" key={product.id}>
+              <div className="product-card" key={product.id}   >
                 <div className="product-image"  >
-                  <img src={product.image} alt="Product image" style={{ width: "100%" }} />
+                  <img src={product.image} alt="Product image" style={{ width: "100%" }} onClick={()=>{handleClick(1)}} />
 
                   <div className="fav-cart"  >
-                    <button className="fav" onClick={()=>{modalTrigger()}} >
+                    <button className="fav" onClick={() => { modalTrigger() }} >
                       <img src={fav} alt="fav" />
                     </button>
 
-                    <button className="shop-cart"  onClick={()=>{handleClick(1)}} >
+                    <button className="shop-cart" onClick={() => { handleClick(1) }} >
                       <img src={atc} alt="cart" />
                     </button>
-</div>
+                  </div>
                 </div>
                 <h2 className="product-name" >
                   {
@@ -130,7 +130,7 @@ const ProductList = () => {
       <Footer />
 
 
-      
+
     </div>
 
   )

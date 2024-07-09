@@ -7,12 +7,12 @@ const Logo = ()=>{
   
   const handleClick = () => {
     navigate("/");
-    alert("clicked")
+  console.log("clicked");
   };
 
 
 return(
-  <div  style={{cursor:"pointer"}} onClick={()=>{handleClick}}  >
+  <div  style={{cursor:"pointer"}} onClick={()=>{handleClick()}}  >
     <img src={Timbu} alt="Timbu Logo" />
   </div>
 )
