@@ -5,7 +5,6 @@ import caretright from "../../assets/images/caret-right.png";
 
 const Cart = () => {
 
-  const [cartVisible, setCartVisible] = useState(false);
 
   const [quantity, setQuantity] = useState(1);
 
