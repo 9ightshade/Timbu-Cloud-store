@@ -6,9 +6,10 @@ import "./productlist.css";
 import { products } from "./products";
 import Footer from "../shared/footer/footer";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+
+
 const ProductList = () => {
-  const [action, setAction] = useState(0);
+
   const navigate = useNavigate();
 
   const handleClick = (action) => {

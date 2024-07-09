@@ -1,6 +1,14 @@
 import "./navlinks.css";
-
+import { useNavigate } from "react-router-dom";
 const NavLinks = () => {
+
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/")
+  }
+
+
 
 return(
 <ul style={{display:"flex", gap:"1em",alignItems:"center", listStyle:"none"}} >
@@ -9,7 +17,7 @@ return(
       Home
     </a>
   </li>
-  <li>
+  <li onClick={handleClick} >
     <a href="#">
       Products
     </a>
